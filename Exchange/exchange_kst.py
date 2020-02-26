@@ -19,6 +19,7 @@ def get_data_init():
 def ftp_connect():
     global ftp
     ftp_conf = data_init['ftp']
+    # соединение
     try:
         ftp = FTP(host=ftp_conf['host'],
                   user=ftp_conf['user'],
